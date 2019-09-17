@@ -11,11 +11,9 @@
 		<% @logs.each do |log| %>
 			<div class="card-deck col-lg-3 col-sm-6">
 				<div class="card h-100">
-					<div class="log-list-card">
 						<a href="/logs/<%= log.id %>">
 							<img class="card-img-top" src="<%= log.img %>" />
 						</a>
-					</div>
 					<div class="card-body">
 							<p class="card-text-posted-by">
 								<%= log.participant.titlecase %>
@@ -23,8 +21,8 @@
 							<p class="card-text-timestamp">
 								<%= log.log_date.strftime("%b %d, %Y") %>
 							</p>
-							<p class="card-text text-truncate">
-								<%= log.observation %>
+							<p class="card-text">
+								<%= log.location.titlecase %>
 							</p>
 					</div>
 				</div>
