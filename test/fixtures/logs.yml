@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  log_date: 2019-09-17
+  log_time: 2019-09-17 15:36:38
+  location: MyText
+  participant: MyText
+  sensor_type: MyText
+  reading: 9.99
+  observation: MyText
+  img: MyText
+
+two:
+  log_date: 2019-09-17
+  log_time: 2019-09-17 15:36:38
+  location: MyText
+  participant: MyText
+  sensor_type: MyText
+  reading: 9.99
+  observation: MyText
+  img: MyText
