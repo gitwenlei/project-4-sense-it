@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_17_073638) do
+ActiveRecord::Schema.define(version: 2019_09_17_182900) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "logs", force: :cascade do |t|
-    t.date "log_date"
-    t.time "log_time"
+    t.datetime "log_date"
     t.text "location"
     t.text "participant"
     t.text "sensor_type"
@@ -29,7 +28,7 @@ ActiveRecord::Schema.define(version: 2019_09_17_073638) do
   end
 
   create_table "sensors", force: :cascade do |t|
-    t.text "sensor_name"
+    t.string "sensor_name"
     t.text "sensor_type"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -18,7 +18,7 @@
 								<%= log.log_date.strftime("%b %d, %Y") %>
 							</p>
 							<p class="card-text-timestamp">
-								<%= log.log_time.strftime("%l:%M %p") %>
+								<%= log.log_date.strftime("%l:%M %p") %>
 							</p>
 							<p class="card-text">
 								<%= log.location.titlecase %>
@@ -28,4 +28,5 @@
 			</div>
 		<% end %>
 	</div>
+	<%= line_chart @logs.group_by_hour(:created_at).count %>
 </div><!-- end of container -->

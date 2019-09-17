@@ -1,8 +1,7 @@
 class CreateLogs < ActiveRecord::Migration[5.2]
   def change
     create_table :logs do |t|
-      t.date :log_date
-      t.time :log_time
+      t.datetime :log_date
       t.text :location
       t.text :participant
       t.text :sensor_type

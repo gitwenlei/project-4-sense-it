@@ -5,7 +5,8 @@ class LogsController < ApplicationController
   # GET /logs.json
   def index
     # @logs = Log.all
-    @logs = Log.order(log_time: :desc).where({participant: "mr siew"})
+    # @logs = Log.order(log_date: :desc).where({participant: "mr siew"})
+    @logs = Log.where({participant: "mr siew"})
   end
 
   # GET /logs/1
@@ -70,6 +71,6 @@ class LogsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def log_params
-      params.require(:log).permit(:log_date, :log_time, :location, :participant, :sensor_type, :reading, :observation, :img)
+      params.require(:log).permit(:log_date, :location, :participant, :sensor_type, :reading, :observation, :img)
     end
 end
