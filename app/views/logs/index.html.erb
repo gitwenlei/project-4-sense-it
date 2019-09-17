@@ -1,41 +1,34 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Logs</h1>
+<!-- Page Content -->
+<div class="container">
+	<h2>Latest Logs Posted</h2>
 
-<table>
-  <thead>
-    <tr>
-      <th>Log date</th>
-      <th>Log time</th>
-      <th>Location</th>
-      <th>Participant</th>
-      <th>Sensor type</th>
-      <th>Reading</th>
-      <th>Observation</th>
-      <th>Img</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+	<div class="row">
+		<% @logs.each do |log| %>
+			<div class="col-lg-3 col-sm-6">
+				<div class="card h-100">
+					<div class="log-list-card">
+						<a href="">
+							<img class="card-img-top" src="<%= log.img %>" />
+						</a>
+					</div>
+					<div class="class-body">
+						<h5 class=card-title>
+							<%= log.location %>
+						</h5>
+							<p class="card-text-posted-by">
+								<%= log.participant %>
+							</p>
+							<p><%= link_to 'Show', log %></p>
+			        <p><%= link_to 'Edit', edit_log_path(log) %></td>
+			        <p><%= link_to 'Destroy', log, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+					</div>
+				</div>
+			</div>
+		<% end %>
+	</div>
 
-  <tbody>
-    <% @logs.each do |log| %>
-      <tr>
-        <td><%= log.log_date %></td>
-        <td><%= log.log_time %></td>
-        <td><%= log.location %></td>
-        <td><%= log.participant %></td>
-        <td><%= log.sensor_type %></td>
-        <td><%= log.reading %></td>
-        <td><%= log.observation %></td>
-        <td><%= log.img %></td>
-        <td><%= link_to 'Show', log %></td>
-        <td><%= link_to 'Edit', edit_log_path(log) %></td>
-        <td><%= link_to 'Destroy', log, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+</div><!-- end of container -->
 
 <%= link_to 'New Log', new_log_path %>
