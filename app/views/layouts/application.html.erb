@@ -28,14 +28,16 @@
 
 	  	<!-- Vertical Nav -->
 			<ul class="nav flex-column">
-				<li class="nav-logo">Sense•It</li>
+				<li class="nav-logo">
+					<a href="<%=logs_path %>"> Sense•It </a>
+				</li>
 
 				<li class="nav-item">
 					<a class="nav-link" href="<%= new_log_path %>">input</a>
 				</li>
 
 				<li class="nav-item">
-					<a class="nav-link" href="#">output</a>
+					<a class="nav-link" href="<%= logs_path %>">output</a>
 				</li>
 			</ul>
 

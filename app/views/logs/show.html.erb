@@ -1,45 +1,53 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+	<div class="log-show col-md-5">
+		<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Log date:</strong>
-  <%= @log.log_date %>
-</p>
+		<p class="log-text">
+		  <img src="<%= @log.img %>" class="card-img-top" />
+		</p>
 
-<p>
-  <strong>Log time:</strong>
-  <%= @log.log_time %>
-</p>
 
-<p>
-  <strong>Location:</strong>
-  <%= @log.location %>
-</p>
+		<p class="log-text">
+		  <strong>Log date:</strong>
+		  <%= @log.log_date %>
+		</p>
 
-<p>
-  <strong>Participant:</strong>
-  <%= @log.participant %>
-</p>
+		<p class="log-text">
+		  <strong>Log time:</strong>
+		  <%= @log.log_time %>
+		</p>
 
-<p>
-  <strong>Sensor type:</strong>
-  <%= @log.sensor_type %>
-</p>
+		<p class="log-text">
+		  <strong>Location:</strong>
+		  <%= @log.location.titlecase %>
+		</p>
 
-<p>
-  <strong>Reading:</strong>
-  <%= @log.reading %>
-</p>
+		<p class="log-text">
+		  <strong>Participant:</strong>
+		  <%= @log.participant.titlecase %>
+		</p>
 
-<p>
-  <strong>Observation:</strong>
-  <%= @log.observation %>
-</p>
+		<p class="log-text">
+		  <strong>Sensor type:</strong>
+		  <%= @log.sensor_type.upcase %>
+		</p>
 
-<p>
-  <strong>Img:</strong>
-  <%= @log.img %>
-</p>
+		<p class="log-text">
+		  <strong>Reading:</strong>
+		  <%= @log.reading %>
+		</p>
 
-<%= link_to 'Edit', edit_log_path(@log) %> |
-<%= link_to 'Back', logs_path %> |
-<%= link_to 'Destroy', @log, method: :delete, data: { confirm: 'Are you sure?' } %>
+		<p class="log-text">
+		  <strong>Observation:</strong>
+		  <%= @log.observation %>
+		</p>
+
+
+		<p class="log-text">
+			<%= link_to 'Edit', edit_log_path(@log) %> |
+			<%= link_to 'Back', logs_path %> |
+			<%= link_to 'Destroy', @log, method: :delete, data: { confirm: 'Are you sure?' } %>
+		</p>
+
+	</div>
+</div>
