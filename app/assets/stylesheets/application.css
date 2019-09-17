@@ -37,18 +37,22 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	min-width: 15rem;
-	width: 15rem;
+	min-width: 12rem;
+	width: 12rem;
 	height: 100vh;
 	border-right: 1px solid #cccccc;
 }
 
 
-.nav-item a, a:visited {
+.nav-item a {
 	font-size: 2rem;
 	font-family: Poppins;
 	font-weight: 300;
 	color: #9e9e9e;
+}
+
+.nav-item a:visited {
+	text-decoration: underline;
 }
 
 

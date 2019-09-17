@@ -21,14 +21,21 @@
   <body>
 
 		<!-- Container Wrapper -->
-  	<div class="container col-md-8">
-
+  	<!-- <div class="container col-md-8"> -->
   		<!-- Stories | Data -->
-	  	<h3> Stories | Data </h3>
+	  	<!-- <h3> Stories | Data </h3> -->
+  	<!-- </div>End Container Wrapper -->
 
+	  	<!-- Vertical Nav -->
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a class="nav-link" href="<%= new_log_path %>">Input</a>
+				</li>
 
-
-  	</div><!-- End Container Wrapper -->
+				<li class="nav-item">
+					<a class="nav-link" href="#">Output</a>
+				</li>
+			</ul>
 
 
     <%= yield %>
