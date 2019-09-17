@@ -112,9 +112,17 @@ body {
 }
 
 
-.card-text-posted-by, .card-text-timestamp {
+.card-text-posted-by {
 	font-family: Poppins;
-	font-weight: 400;
+	font-weight: 600;
+	font-size: .9rem;
+	margin: 0 0 5px 0;
+}
+
+.card-text-timestamp {
+	font-style: italic;
+	font-family: Poppins;
+	font-weight: 300;
 	font-size: .9rem;
 }
 
@@ -154,7 +162,7 @@ label {
 }
 
 .log-text {
-	color: #9e9e9e;
+	color: #787878;
 	font-family: Poppins;
 	font-weight: 300;
 	font-size: 1.1rem;

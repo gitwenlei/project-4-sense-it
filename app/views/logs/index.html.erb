@@ -17,16 +17,13 @@
 						</a>
 					</div>
 					<div class="card-body">
-						<h5 class=card-title>
-							<%= log.location.titlecase %>
-						</h5>
 							<p class="card-text-posted-by">
 								<%= log.participant.titlecase %>
 							</p>
 							<p class="card-text-timestamp">
-								<%= log.log_date %>
+								<%= log.log_date.strftime("%b %d, %Y") %>
 							</p>
-							<p class="card-text">
+							<p class="card-text text-truncate">
 								<%= log.observation %>
 							</p>
 					</div>
