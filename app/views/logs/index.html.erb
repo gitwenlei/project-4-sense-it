@@ -1,12 +1,8 @@
 <div class="container">
-	<div class="col">
 
 	<p id="notice"><%= notice %></p>
 
 <!-- Page Content -->
-
-	<h5>Latest Post</h5>
-
 	<div class="row">
 		<% @logs.each do |log| %>
 			<div class="card-deck col-lg-3 col-sm-6">
@@ -29,5 +25,4 @@
 			</div>
 		<% end %>
 	</div>
-</div>
 </div><!-- end of container -->
