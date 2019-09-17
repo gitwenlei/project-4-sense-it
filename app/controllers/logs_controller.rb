@@ -4,7 +4,8 @@ class LogsController < ApplicationController
   # GET /logs
   # GET /logs.json
   def index
-    @logs = Log.all
+    # @logs = Log.all
+    @logs = Log.order(log_time: :desc).where({participant: "mr siew"})
   end
 
   # GET /logs/1

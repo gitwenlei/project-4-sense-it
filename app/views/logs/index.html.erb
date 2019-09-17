@@ -17,6 +17,9 @@
 							<p class="card-text-timestamp">
 								<%= log.log_date.strftime("%b %d, %Y") %>
 							</p>
+							<p class="card-text-timestamp">
+								<%= log.log_time.strftime("%l:%M %p") %>
+							</p>
 							<p class="card-text">
 								<%= log.location.titlecase %>
 							</p>
