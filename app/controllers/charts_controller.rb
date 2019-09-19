@@ -7,7 +7,8 @@ class ChartsController < ApplicationController
   # end
 
   def index
-    @logs = Log.where({participant: "mr siew"})
+    # @logs = Log.where({participant: "mr siew"})
+    @logs = Log.all.order(:log_date)
   end
 
 end
