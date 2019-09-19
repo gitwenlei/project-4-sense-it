@@ -1,9 +1,20 @@
-<div class="container">
+<div class="container chart">
 	<div class="row">
-		<%= line_chart @siew.pluck(:log_date, :reading), xtitle: "time", ytitle: "sound level", width: "800px", height: "300px" %>
+		<div class="col">
+			<%= line_chart @siew.pluck(:log_date, :reading), xtitle: "Time", ytitle: "Sound Level", width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @siew[0].participant.titlecase %> | <%= @siew_sensor.titlecase %>
+					</p>
 		</div>
+	</div>
+
 
 		<div class="row">
-			<%= line_chart @lim.pluck(:log_date, :reading), xtitle: "time", ytitle: "air quality", width: "800px", height: "300px" %>
+			<div class="col">
+				<%= line_chart @lim.pluck(:log_date, :reading), xtitle: "Time", ytitle: "Air Quality", width: "800px", height: "300px", label: "Reading", colors: ["#48D1CC"] %>
+					<p class="chart-participant">
+						<%= @lim[0].participant.titlecase %> | <%= @lim_sensor.titlecase %>
+					</p>
 		</div>
+	</div>
 </div>
