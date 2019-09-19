@@ -90,12 +90,16 @@ body {
 */
 
 .container {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: calc(100% - 17rem);
-	margin-top: 5rem;
+	position: fixed;
+	top: 2rem;
+	bottom: 0;
+	left: 20rem;
+
+	width: calc(100vw -20rem);
+	height: 100vh;
 	margin-right: 0;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 .card-deck {
@@ -151,10 +155,9 @@ body {
 * ============================
 */
 
-.log-form {
-	margin: 20px auto;
+.new-log-form {
+	margin-bottom: 4rem;
 }
-
 
 label {
 	color: #9e9e9e;
@@ -171,7 +174,8 @@ label {
 */
 
 .log-show {
-	margin: 20px auto;
+	margin-right: 0;
+	margin-bottom: 5rem;
 }
 
 .log-text {
