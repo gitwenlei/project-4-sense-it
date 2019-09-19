@@ -7,6 +7,10 @@ class LogsController < ApplicationController
     # @logs = Log.all
     # @logs = Log.order(log_date: :desc).where({participant: "mr siew"})
     @logs = Log.where({participant: "mr siew"})
+    # @charts = Log.select(:reading, :log_date).where({participant: 'mr siew'}).order(:log_date)
+    # puts "*************"
+    # puts @charts[0].reading
+    # puts @charts[0].log_date
   end
 
   # GET /logs/1
