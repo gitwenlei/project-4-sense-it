@@ -5,7 +5,7 @@
 <!-- Page Content -->
 	<div class="row">
 		<% @logs.each do |log| %>
-			<div class="card-deck col-lg-3 col-sm-6">
+			<div class="card-deck col-lg-3 col-md-6 col-sm-12">
 				<div class="card h-100">
 						<a href="/logs/<%= log.id %>">
 							<img class="card-img-top" src="<%= log.img %>" />
@@ -28,5 +28,5 @@
 			</div>
 		<% end %>
 	</div>
-	<%= line_chart @logs.group_by_hour(:created_at).count %>
+<%= line_chart @logs.group_by_hour(:log_date).count %>
 </div><!-- end of container -->

@@ -90,8 +90,12 @@ body {
 */
 
 .container {
-	width: calc(100% - 30rem);
+	position: fixed;
+	top: 0;
+	left: 20rem;
+	width: calc(100% - 17rem);
 	margin-top: 5rem;
+	margin-right: 0;
 }
 
 .card-deck {
