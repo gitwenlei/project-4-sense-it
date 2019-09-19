@@ -90,9 +90,9 @@ body {
 */
 
 .container {
-	position: fixed;
+	position: relative;
 	top: 0;
-	left: 20rem;
+	left: 0;
 	width: calc(100% - 17rem);
 	margin-top: 5rem;
 	margin-right: 0;
