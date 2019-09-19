@@ -14,7 +14,7 @@ module Site
     config.time_zone = 'Singapore'
     config.active_record.default_timezone = :local
 
-    # Groupdate.time_zone = "Singapore" --> does not work
+    # Groupdate.time_zone = "Singapore" --> does not work for groupdate gem
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

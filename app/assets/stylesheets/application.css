@@ -181,3 +181,15 @@ label {
 	font-size: 1.1rem;
 	line-height: 1.75rem;
 }
+
+
+/*
+* ============================
+*	 CHARTS CSS
+* ============================
+*/
+
+.row {
+	margin-left: 2rem;
+	margin-bottom: 7rem;
+}

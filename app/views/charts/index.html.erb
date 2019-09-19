@@ -1,3 +1,9 @@
 <div class="container">
-		<%= line_chart @logs.pluck(:log_date, :reading), xtitle: "time", ytitle: "readings" %>
+	<div class="row">
+		<%= line_chart @siew.pluck(:log_date, :reading), xtitle: "time", ytitle: "sound level", width: "800px", height: "300px" %>
+		</div>
+
+		<div class="row">
+			<%= line_chart @lim.pluck(:log_date, :reading), xtitle: "time", ytitle: "air quality", width: "800px", height: "300px" %>
+		</div>
 </div>
