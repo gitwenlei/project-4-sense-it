@@ -7,7 +7,27 @@ import ReactDOM from 'react-dom'
 import PropTypes from 'prop-types'
 
 const Hello = props => (
-  <div>Hello {props.name}!</div>
+  // <div>Hello {props.name}!</div>
+
+  // <!-- Vertical Nav -->
+    <ul className="nav-bar flex-column">
+        <li className="nav-logo">
+            <a href="<%=logs_path %>"> Sense•It </a>
+        </li>
+
+        <li className="nav-item">
+            <a className="nav-link" href="<%= new_log_path %>">new log</a>
+        </li>
+
+        <li className="nav-item">
+            <a className="nav-link" href="<%= logs_path %>">view logs</a>
+        </li>
+
+        <li className="nav-item">
+            <a className="nav-link" href="<%= charts_path %>">view graphs</a>
+        </li>
+
+    </ul>
 )
 
 Hello.defaultProps = {

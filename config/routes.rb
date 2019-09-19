@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
-  root 'dashboard#index'
+  root 'landing#index'
 
+  resources :dashboard
   resources :logs
   resources :sensors
   resources :charts
+  resources :landing
 
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
