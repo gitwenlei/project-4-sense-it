@@ -25,6 +25,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: Poppins;
+	background: #f5c040;
 }
 
 
@@ -34,30 +35,42 @@ body {
 * ============================
 */
 
-.sticky-top {
-	margin: 0;
-}
-
-.navbar {
-	background: transparent;
+.bg-nav-sense  {
 	position: relative;
 	top: 0;
-	left: 0;
+	left: 50%;
+	width: 50%;
+	background-color: #272263;
+}
+
+
+.bg-nav-naked  {
+	background-color: #eb402c;
+}
+
+
+.navbar {
+	background-color: #eb402c;
+	position: relative;
+	top: 0;
+	left: 50%;
 	margin: 0;
+	width: 50vw;
 }
 
 .navbar-toggler {
+	background-color: #000;
 	position: relative;
 	top: 0;
 	left: calc(100% - 5rem);
-	border-radius: 200rem;
+	border-radius: 500rem;
 	border: 3px solid #fff;
-	font-size: 3rem;
+	font-size: 2rem;
 }
 
 .navbar-toggler-icon {
-	width: .75em;
-	height: .75em;
+	width: .5em;
+	height: .5em;
 }
 
 button:focus {
@@ -83,31 +96,25 @@ button:focus {
 	margin-left: 0;
 }
 
-
-
-.landing {
-}
-
-
 .col-white {
 	background: white;
-	border: 1px solid grey;
+	/*border: 1px solid grey;*/
 }
 
 .col-red {
-	background: red;
-	border: 1px solid grey;
+	background: #eb402c;
+	/*border: 1px solid grey;*/
 }
 
 .col-yellow {
-	background: yellow;
-	border: 1px solid grey;
+	background: #f5c040;
+	/*border: 1px solid grey;*/
 }
 
 
 .col-blue {
-	background: blue;
-	border: 1px solid grey;
+	background: #6549f5;
+	/*border: 1px solid grey;*/
 }
 
 
