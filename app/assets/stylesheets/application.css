@@ -541,10 +541,13 @@ button:focus {
 */
 
 .log-container {
+	display: flex;
+	flex-flow: row wrap;
 	position: relative;
 	top: 2rem;
+	left: 17rem;
 	bottom: 0;
-	width: calc(100vw -17rem);
+	width: calc(100vw - 17rem);
 	margin-right: 0;
 	margin-bottom: 5rem;
 }
@@ -603,6 +606,7 @@ button:focus {
 */
 
 .new-log-form {
+	margin-left: 3rem;
 	margin-bottom: 4rem;
 }
 

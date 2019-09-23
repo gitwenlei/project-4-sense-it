@@ -1,5 +1,5 @@
 <%= javascript_pack_tag 'vertical_menu' %>
-<div class="container chart">
+<div class="log-container chart">
 	<div class="row">
 		<div class="col">
 			<%= line_chart @mr.pluck(:log_date, :reading), xtitle: "Time", ytitle: "Sound Level", width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
