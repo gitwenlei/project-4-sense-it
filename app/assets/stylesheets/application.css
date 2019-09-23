@@ -290,6 +290,50 @@ button:focus {
 }
 
 
+/*
+* ==================================
+*	LANDING PAGE PARTICIPANTS CONTENT
+* ==================================
+*/
+
+.landing-participant-content {
+	margin: 5rem 5rem 5rem 8rem;
+	min-width: 50%;
+	height: 650px;
+	/*border: 1px solid #fff;*/
+}
+
+
+.landing-participant-side-way {
+	color: #fff;
+	font-size: 2.25rem;
+	font-weight: 800;
+	word-spacing: 1rem;
+	left: 2rem;
+	top: 5rem;
+	position: absolute;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	z-index: 1;
+}
+
+
+.landing-participant-text {
+	color: #272263;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: 2.6rem;
+	width: 400px;
+	padding-top: 0;
+	padding-right: 1.8rem;
+	padding-left: 1.8rem;
+	z-index: 1000;
+	margin-top: 0;
+	/*border: 1px solid #fff;*/
+}
+
+
+
 
 /*
 * ============================
