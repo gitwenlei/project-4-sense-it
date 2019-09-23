@@ -136,17 +136,6 @@ button:focus {
   margin-bottom: 1rem;
 }
 
-.landing-img {
-	position: absolute;
-	width: 380px;
-	height: 480px;
-	margin-top: 0;
-	margin-bottom: 1rem;
-  background-position: center center;
-  background-repeat: no-repeat;
-	z-index: 1000;
-}
-
 .landing-content {
 	margin: 5rem 5rem 5rem 8rem;
 	min-width: 50%;
@@ -165,31 +154,6 @@ button:focus {
 	top: 600px;
 }
 
-.landing-best-for-side-way {
-	font-size: 2.25rem;
-	font-weight: 800;
-	word-spacing: 1rem;
-	left: 2rem;
-	top: 31.5rem;
-	position: absolute;
-	writing-mode: vertical-rl;
-	text-orientation: mixed;
-	z-index: 1;
-}
-
-.landing-featured-location-side-way {
-	font-size: 2.25rem;
-	font-weight: 800;
-	word-spacing: 1rem;
-	left: 2rem;
-	top: 10rem;
-	position: absolute;
-	writing-mode: vertical-rl;
-	text-orientation: mixed;
-	z-index: 1;
-}
-
-
 .landing-header-white-box {
 	font-size: 1.75rem;
 	font-weight: 400;
@@ -197,7 +161,6 @@ button:focus {
 	/*margin-top: 2rem;*/
 	/*margin-bottom: 1rem;*/
 }
-
 
 
 .landing-header-red-box {
@@ -225,6 +188,109 @@ button:focus {
 	line-height: 2.25rem;
 	margin-bottom: 2rem;
 }
+
+
+/*
+* ==============================
+*	LANDING PAGE DATA STORIES
+* ==============================
+*/
+.landing-data-stories-content {
+	margin: 5rem 5rem 5rem 8rem;
+	min-width: 50%;
+	height: 650px;
+	/*border: 1px solid #fff;*/
+}
+
+.landing-data-stories-text {
+	color: #fff;
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 2rem;
+	width: 400px;
+	background-color: #272263;
+	padding: 1.8rem;
+	z-index: 1000;
+	margin-top: 0;
+	/*border: 1px solid #fff;*/
+}
+
+
+.landing-data-stories-img {
+/*	position: absolute;*/
+	width: 400px;
+	height: 300px;
+	margin-top: 0;
+	margin-bottom: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+	z-index: 1;
+}
+
+/*
+* ============================
+*	LANDING PAGE IMAGES CSS
+* ============================
+*/
+
+.landing-img {
+	position: absolute;
+	width: 380px;
+	height: 480px;
+	margin-top: 0;
+	margin-bottom: 1rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+	z-index: 1000;
+}
+
+
+/*
+* ============================
+*	LANDING PAGE SIDEWAY TEXT
+* ============================
+*/
+
+.landing-best-for-side-way {
+	font-size: 2.25rem;
+	font-weight: 800;
+	word-spacing: 1rem;
+	left: 2rem;
+	top: 29.5rem;
+	position: absolute;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	z-index: 1;
+}
+
+.landing-featured-location-side-way {
+	font-size: 2.25rem;
+	font-weight: 800;
+	word-spacing: 1rem;
+	left: 2rem;
+	top: 10rem;
+	position: absolute;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	z-index: 1;
+}
+
+.landing-data-stories-side-way {
+	color: #fff;
+	font-size: 2.25rem;
+	font-weight: 800;
+	word-spacing: 1rem;
+	left: 2rem;
+	top: 5rem;
+	position: absolute;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	z-index: 1;
+}
+
+
+
+
 
 /*
 * ============================
