@@ -227,6 +227,19 @@ button:focus {
 	z-index: 1;
 }
 
+.landing-data-stories-datetime {
+	position: absolute;
+	background-color: #f5c040;
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	width: 175px;
+	padding: 1rem;
+	margin: 1rem;
+}
+
+
+
+
 /*
 * ============================
 *	LANDING PAGE IMAGES CSS
