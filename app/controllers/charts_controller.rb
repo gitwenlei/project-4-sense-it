@@ -7,12 +7,12 @@ class ChartsController < ApplicationController
   # end
 
   def index
-    @siew = Log.where({participant: "mr siew"})
-    @siew_sensor = @siew[0].sensor_type
-    puts "*********"
-    puts @siew_sensor
-    @lim = Log.where({participant: "mdm lim"})
-    @lim_sensor = @lim[0].sensor_type
+    @mr = Log.where({participant: "mr michael tan"})
+    @mr_sensor = @mr[0].sensor_type
+    # puts "*********"
+    # puts @mr_sensor
+    @mdm = Log.where({participant: "mdm lucy chew"})
+    @mdm_sensor = @mdm[0].sensor_type
     # @logs = Log.all.order(:log_date)
   end
 
