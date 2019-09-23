@@ -138,8 +138,8 @@ button:focus {
 
 .landing-img {
 	position: absolute;
-	width: 400px;
-	height: 400px;
+	width: 380px;
+	height: 480px;
 	margin-top: 0;
 	margin-bottom: 1rem;
   background-position: center center;
@@ -148,13 +148,31 @@ button:focus {
 }
 
 .landing-content {
-	margin: 5rem;
-	height: 600px;
+	margin: 5rem 5rem 5rem 8rem;
+	height: 650px;
+}
+
+.landing-current-status {
+	position: absolute;
+	z-index: 2;
+	top: 710px;
+}
+
+.landing-side-way {
+	font-size: 2.25rem;
+	font-weight: 800;
+	word-spacing: 1rem;
+	left: 2rem;
+	top: 500px;
+	position: absolute;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	z-index: 1;
 }
 
 
 .landing-header-white-box {
-	font-size: 2rem;
+	font-size: 1.75rem;
 	font-weight: 400;
 	color: #000;
 	margin-top: 2rem;
@@ -170,11 +188,11 @@ button:focus {
 
 .landing-img-box-bg-blue {
   position: absolute;
-	margin-top: 2rem;
-	margin-left: 2rem;
+	margin-top: 1.25rem;
+	margin-left: 1.25rem;
 	margin-bottom: 4rem;
-	width: 400px;
-	height: 400px;
+	width: 380px;
+	height: 480px;
 	background: #6549f5;
 	z-index: 1;
 }
