@@ -46,19 +46,21 @@ body {
 
 
 .bg-nav-naked  {
-	background-color: #eb402c;
+	/*background-color: #eb402c;*/
+	background-color: transparent;
 }
 
 
 .navbar {
 	background-color: #eb402c;
+	/*background-color: transparent;*/
 	position: relative;
 	top: 0;
-	/*left: calc(50% + .45rem);*/
-	left: 0;
+	left: calc(50% + .45rem);
+	/*left: 0;*/
 	margin: 0;
-	/*width: 50vw;*/
-	width: 100vw;
+	width: 50vw;
+	/*width: 100vw;*/
 }
 
 .navbar-toggler {
