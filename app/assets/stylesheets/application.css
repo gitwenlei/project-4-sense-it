@@ -237,7 +237,18 @@ button:focus {
 	margin: 1rem;
 }
 
-
+.landing-data-stories-sensor-type {
+	position: absolute;
+	color: #fff;
+	top: 200px;
+	background-color: #f5c040;
+	font-size: 2rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	width: 210px;
+	padding: 1rem;
+	margin: 1rem;
+}
 
 
 /*
