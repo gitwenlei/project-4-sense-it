@@ -40,7 +40,7 @@
 				<h4 class="landing-featured-location-side-way">FEATURED LOCATION</h4>
 				<div class="landing-img" style="background-image: url('/images/park.jpg');"></div>
 				<div class="landing-img-box-bg-blue"></div>
-				<div class="landing-current-status-featured-location"><h4 class="landing-header-white-box">Punggol Plaza Wet Market</h4></div>
+				<div class="landing-current-status-featured-location"><h4 class="landing-header-white-box">Punggol Waterway Park</h4></div>
 			</div>
 			<!-- end of 2nd row 1st column -->
 		</div>
@@ -52,7 +52,7 @@
 				<div class="landing-data-stories-datetime"><%= @mdm[0].log_date.strftime("%e %b %Y %H:%M:%S%p") %></div>
 				<div class="landing-data-stories-sensor-type"><%= @mdm[0].sensor_type.titlecase %></div>
 				<div class="landing-data-stories-reading"><%= @mdm[0].reading %></div>
-				<div class="landing-data-stories-img" style="background-image: url('/images/seafood.jpg');"></div>
+				<div class="landing-data-stories-img" style="background-image: url('<%= @mdm[0].img %>');"></div>
 				<div class="landing-data-stories-text"><%= @mdm[0].observation %> </div>
 			</div>
 		</div>
