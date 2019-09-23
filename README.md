@@ -29,4 +29,4 @@ Sense-It is a community-based art project based in Punggol. Sense-It site is a w
 </ul>
 
 ## Process
-Wireframes - public/images/wireframes
+Wireframes - public/images/wireframe.pdf
