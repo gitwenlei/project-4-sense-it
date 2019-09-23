@@ -1,24 +1,32 @@
-# README
+# Sense-It
+https://sense-it-site.herokuapp.com/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Project Overview
+Sense-It is a community-based art project based in Punggol. Sense-It site is a web application that allows workshop faciliators to record & visualise environment data collected by participants from this neighbourhood. The public will also get to see featured locations in Punggols as well as learn more about each participant.
 
-Things you may want to cover:
+## Project Site 
 
-* Ruby version
+### Landing page:
+<p> Users will get to see featured locations in Punggol and participants. </p>
+<p> They can also access the dashboard from here. </p>
 
-* System dependencies
+### Dashboard page:
+<p> Users will be able to create new log, view logs recorded by participants in both card mode & graph mode. </p>
 
-* Configuration
 
-* Database creation
+## Heroku & Github
+<ul>
+  <li> Heroku: https://sense-it-site.herokuapp.com/ </li>
+  <li> Github: https://github.com/gitwenlei/project-4-sense-it </li>
+</ul>
 
-* Database initialization
+## Technologies used
+<ul>
+  <li> Ruby on Rails </li>
+  <li> ReactJS </li>
+  <li> NodeJS - webpacker </li>
+  <li> PostgreSQL </li>
+</ul>
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Process
+Wireframes - public/images/wireframes
