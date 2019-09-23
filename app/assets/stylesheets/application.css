@@ -29,7 +29,6 @@ body {
 	background: #fff;
 }
 
-
 /*
 * ============================
 *	 COLLAPSED MENU CSS
@@ -52,8 +51,8 @@ body {
 
 
 .navbar {
-	background-color: #eb402c;
-	/*background-color: transparent;*/
+	/*background-color: #eb402c;*/
+	background-color: transparent;
 	position: relative;
 	top: 0;
 	left: calc(50% + .45rem);
@@ -130,6 +129,7 @@ button:focus {
 
 .landing-logo {
 	position: absolute;
+	top: 1rem;
 	left: 20%;
 	margin-top: 0;
 	padding-top: 0;
@@ -154,7 +154,7 @@ button:focus {
 .landing-current-status {
 	position: absolute;
 	z-index: 2;
-	top: 700px;
+	top: 650px;
 }
 
 .landing-current-status-featured-location {
@@ -292,7 +292,7 @@ button:focus {
 	font-size: 6rem;
 	font-weight: 500;
 	line-height: 1.8rem;
-	width: 120px;
+	width: 200px;
 	height: 6rem;
 	padding: 2.25rem 3rem 1rem 1rem;
 	margin: 1rem;
@@ -410,7 +410,7 @@ button:focus {
 	font-weight: 800;
 	word-spacing: 1rem;
 	left: 2rem;
-	top: 29.5rem;
+	top: 8rem;
 	position: absolute;
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
@@ -422,7 +422,7 @@ button:focus {
 	font-weight: 800;
 	word-spacing: 1rem;
 	left: 2rem;
-	top: 10rem;
+	top: 5rem;
 	position: absolute;
 	writing-mode: vertical-rl;
 	text-orientation: mixed;
@@ -625,6 +625,7 @@ label {
 */
 
 .log-show {
+	margin-left: 4rem;
 	margin-right: 0;
 	margin-bottom: 5rem;
 }

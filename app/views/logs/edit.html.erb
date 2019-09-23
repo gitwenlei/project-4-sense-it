@@ -1,11 +1,15 @@
-<div class="container">
+<%= javascript_pack_tag 'vertical_menu' %>
+
+<div class="log-container">
 	<div class="new-log-form col-md-7 col-sm-7">
 		<h1>Editing Log</h1>
 
 		<%= render 'form', log: @log %>
 
+	<p class="log-text">
 		<%= link_to 'Show', @log %> |
 		<%= link_to 'Back', logs_path %>
+	</p>
 
 	</div>
 </div>
