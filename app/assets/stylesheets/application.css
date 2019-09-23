@@ -148,7 +148,7 @@ button:focus {
 	color: #fff;
 	font-size: 1.4rem;
 	font-weight: 300;
-	line-height: 2rem;
+	line-height: 2.25rem;
 }
 
 
@@ -307,6 +307,18 @@ button:focus {
 	margin: 1rem;
 }
 
+.landing-data-stories-participant {
+	position: absolute;
+	color: #000;
+	top: 340px;
+	background-color: #f5c040;
+	font-size: 1rem;
+	font-weight: 400;
+	width: 210px;
+	padding: .5rem;
+	margin: 1rem;
+}
+
 
 /*
 * ==================================
@@ -349,6 +361,8 @@ button:focus {
 	margin-top: 0;
 	/*border: 1px solid #fff;*/
 }
+
+
 
 
 
@@ -494,6 +508,7 @@ button:focus {
 
 .nav-bar {
 	position: fixed;
+	background-color: #fff;
 	top: 0;
 	left: 0;
 	min-width: 17rem;
@@ -553,6 +568,7 @@ button:focus {
 */
 
 .log-container {
+	background-color: #fff;
 	display: flex;
 	flex-flow: row wrap;
 	position: relative;
@@ -657,6 +673,7 @@ label {
 * ============================
 */
 .chart {
+	margin-top: 2rem;
 	font-family: Poppins;
 	font-weight: 400;
 }
