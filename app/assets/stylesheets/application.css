@@ -26,6 +26,7 @@ body {
 	padding: 0;
 	font-family: Poppins;
 	/*background: #f5c040;*/
+	background: #fff;
 }
 
 
@@ -39,7 +40,7 @@ body {
 	position: relative;
 	top: 0;
 	left: calc(50% + .45rem);
-	width: 50%;
+	width: 100%;
 	background-color: #272263;
 }
 
@@ -53,9 +54,11 @@ body {
 	background-color: #eb402c;
 	position: relative;
 	top: 0;
-	left: calc(50% + .45rem);
+	/*left: calc(50% + .45rem);*/
+	left: 0;
 	margin: 0;
-	width: 50vw;
+	/*width: 50vw;*/
+	width: 100vw;
 }
 
 .navbar-toggler {
@@ -124,6 +127,10 @@ button:focus {
 */
 
 .landing-logo {
+	position: absolute;
+	left: 20%;
+	margin-top: 0;
+	padding-top: 0;
 	font-family: Dosis;
 	font-weight: 600;
 }
@@ -157,7 +164,7 @@ button:focus {
 .landing-participant-name {
 	position: absolute;
 	z-index: 2;
-	top: 600px;
+	top: 500px;
 }
 
 .landing-header-white-box {
@@ -347,9 +354,46 @@ button:focus {
 	height: 480px;
 	margin-top: 0;
 	margin-bottom: 1rem;
-  background-position: center center;
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+	z-index: 1000;
+}
+
+
+.landing-participant-img {
+	position: absolute;
+	width: 380px;
+	height: 380px;
+	margin-top: 0;
+	margin-bottom: 1rem;
+  background-position: center 40%;
   background-repeat: no-repeat;
 	z-index: 1000;
+}
+
+.landing-participant-uncle-img {
+	position: absolute;
+	width: 380px;
+	height: 380px;
+	margin-top: 0;
+	margin-bottom: 1rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-clip: border-box;*/
+	z-index: 1000;
+}
+
+.landing-participant-img-box-bg-dark-blue {
+  position: absolute;
+	margin-top: 1.25rem;
+	margin-left: 1.25rem;
+	margin-bottom: 4rem;
+	width: 380px;
+	height: 380px;
+	background: #272263;
+	z-index: 1;
 }
 
 
@@ -396,7 +440,20 @@ button:focus {
 	z-index: 1;
 }
 
-.landing-featured-participant-side-way {
+.landing-featured-participant-side-way-yellow {
+	color: #f5c040;
+	font-size: 2.25rem;
+	font-weight: 800;
+	word-spacing: 1rem;
+	left: 2rem;
+	top: 5rem;
+	position: absolute;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	z-index: 1;
+}
+
+.landing-featured-participant-side-way-blue {
 	color: #272263;
 	font-size: 2.25rem;
 	font-weight: 800;
@@ -409,6 +466,11 @@ button:focus {
 	z-index: 1;
 }
 
+
+
+.landing-featured-participant-side-way {
+	color: #f5c040;
+}
 
 
 
