@@ -154,12 +154,24 @@ button:focus {
 	top: 600px;
 }
 
+.landing-participant-name {
+	position: absolute;
+	z-index: 2;
+	top: 600px;
+}
+
 .landing-header-white-box {
 	font-size: 1.75rem;
 	font-weight: 400;
 	color: #000;
 	/*margin-top: 2rem;*/
 	/*margin-bottom: 1rem;*/
+}
+
+.landing-header-participant-name {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #fff;
 }
 
 
@@ -180,6 +192,18 @@ button:focus {
 	background: #6549f5;
 	z-index: 1;
 }
+
+.landing-img-box-bg-dark-blue {
+  position: absolute;
+	margin-top: 1.25rem;
+	margin-left: 1.25rem;
+	margin-bottom: 4rem;
+	width: 380px;
+	height: 480px;
+	background: #272263;
+	z-index: 1;
+}
+
 
 .landing-text {
 	color: #fff;
@@ -317,6 +341,19 @@ button:focus {
 
 .landing-data-stories-side-way {
 	color: #fff;
+	font-size: 2.25rem;
+	font-weight: 800;
+	word-spacing: 1rem;
+	left: 2rem;
+	top: 5rem;
+	position: absolute;
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	z-index: 1;
+}
+
+.landing-featured-participant-side-way {
+	color: #272263;
 	font-size: 2.25rem;
 	font-weight: 800;
 	word-spacing: 1rem;
