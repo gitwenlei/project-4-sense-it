@@ -250,6 +250,22 @@ button:focus {
 	margin: 1rem;
 }
 
+.landing-data-stories-reading {
+	position: absolute;
+	color: #000;
+	left: 59%;
+	top: 165px;
+	background-color: #f5c040;
+	font-size: 6rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	width: 120px;
+	height: 6rem;
+	padding: 2.25rem 3rem 1rem 1rem;
+	margin: 1rem;
+}
+
+
 
 /*
 * ============================
