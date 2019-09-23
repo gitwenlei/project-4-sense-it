@@ -123,6 +123,11 @@ button:focus {
 * ============================
 */
 
+.landing-logo {
+	font-family: Dosis;
+	font-weight: 600;
+}
+
 .thumb-post {
 	object-fit: none; /* Do not scale the image */
   object-position: center; /* Center the image within the element */
@@ -132,14 +137,55 @@ button:focus {
 }
 
 .landing-img {
+	position: absolute;
 	width: 400px;
 	height: 400px;
+	margin-top: 0;
 	margin-bottom: 1rem;
   background-position: center center;
   background-repeat: no-repeat;
+	z-index: 1000;
+}
+
+.landing-content {
+	margin: 5rem;
+	height: 600px;
 }
 
 
+.landing-header-white-box {
+	font-size: 2rem;
+	font-weight: 400;
+	color: #000;
+	margin-top: 2rem;
+	margin-bottom: 1rem;
+}
+
+.landing-header-red-box {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 2rem;
+}
+
+.landing-img-box-bg-blue {
+  position: absolute;
+	margin-top: 2rem;
+	margin-left: 2rem;
+	margin-bottom: 4rem;
+	width: 400px;
+	height: 400px;
+	background: #6549f5;
+	z-index: 1;
+}
+
+.landing-text {
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 300;
+	line-height: 2.25rem;
+	margin-bottom: 2rem;
+}
 
 /*
 * ============================
