@@ -4,7 +4,7 @@ class LogsController < ApplicationController
   # GET /logs
   # GET /logs.json
   def index
-    @logs = Log.all.order(updated_at: :desc)
+    @logs = Log.all.order(created_at: :desc)
     # @logs = Log.order(log_date: :desc).where({participant: "mr siew"})
     # @logs = Log.where({participant: "mr siew"}).order(:log_date)
     # @charts = Log.select(:reading, :log_date).where({participant: 'mr siew'}).order(:log_date)
