@@ -36,17 +36,19 @@
 	</div>
 	<!-- end of mdm lau kwee lian -->
 
-
-	<!-- 4. mdm maureen teo, mdm rosy soon -->
+	<!--# 4. mdm maureen teo mdm rosy soon-->
 	<div class="row">
 		<div class="col">
-			<%= line_chart @mdmrosy.pluck(:log_date, :reading), xtitle: "Time", ytitle: @mdmrosy_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#48D1CC"] %>
+			<%= line_chart @mdmrosy.pluck(:log_date, :reading), xtitle: "Time", ytitle: @mdmrosy_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
 					<p class="chart-participant">
 						<%= @mdmrosy[0].participant.titlecase %> | <%= @mdmrosy_sensor.upcase %>
 					</p>
 		</div>
 	</div>
-	<!-- end of 4. mdm maureen teo, mdm rosy soon-->
+	<!-- end of 4. mdm maureen teo mdm rosy soon -->
+
+
+
 
 
 
