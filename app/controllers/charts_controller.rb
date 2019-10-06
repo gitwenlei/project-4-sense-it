@@ -7,6 +7,17 @@ class ChartsController < ApplicationController
   # end
 
   def index
+
+    # mdm chan yau kum
+    @mdmchan = Log.where({participant: "mdm chan yau kum"})
+    @mdmchan_sensor = @mdmchan[0].sensor_type
+
+
+
+
+    # ***********************
+    # dummy participant
+    # ***********************
     @mr = Log.where({participant: "mr michael tan"})
     @mr_sensor = @mr[0].sensor_type
     # puts "*********"
@@ -14,6 +25,7 @@ class ChartsController < ApplicationController
     @mdm = Log.where({participant: "mdm lucy chew"})
     @mdm_sensor = @mdm[0].sensor_type
     # @logs = Log.all.order(:log_date)
+
   end
 
 end

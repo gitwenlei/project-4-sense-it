@@ -1,6 +1,22 @@
 <%= javascript_pack_tag 'vertical_menu' %>
 
 <div class="log-container chart">
+
+ 	<!-- mdm chan yau kum -->
+	<div class="row">
+		<div class="col">
+			<%= line_chart @mdmchan.pluck(:log_date, :reading), xtitle: "Time", ytitle: @mdmchan_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @mdmchan[0].participant.titlecase %> | <%= @mdmchan_sensor.upcase %>
+					</p>
+		</div>
+	</div>
+	<!-- end of mdm chan yau kum -->
+
+
+
+
+<!-- dummmy participant -->
 	<div class="row">
 		<div class="col">
 			<%= line_chart @mr.pluck(:log_date, :reading), xtitle: "Time", ytitle: "Sound Level", width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
@@ -17,6 +33,9 @@
 					<p class="chart-participant">
 						<%= @mdm[0].participant.titlecase %> | <%= @mdm_sensor.titlecase %>
 					</p>
+			</div>
 		</div>
-	</div>
+<!-- end of dummy participant -->
+
+
 </div>
