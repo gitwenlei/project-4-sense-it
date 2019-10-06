@@ -2,7 +2,7 @@
 
 <div class="log-container chart">
 
- 	<!-- mdm chan yau kum -->
+ 	<!-- 1. mdm chan yau kum -->
 	<div class="row">
 		<div class="col">
 			<%= line_chart @mdmchan.pluck(:log_date, :reading), xtitle: "Time", ytitle: @mdmchan_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
@@ -12,6 +12,18 @@
 		</div>
 	</div>
 	<!-- end of mdm chan yau kum -->
+
+		<!-- 2. mdm wong sing heng -->
+	<div class="row">
+		<div class="col">
+			<%= line_chart @mdmwong.pluck(:log_date, :reading), xtitle: "Time", ytitle: @mdmwong_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @mdmwong[0].participant.titlecase %> | <%= @mdmwong_sensor.upcase %>
+					</p>
+		</div>
+	</div>
+	<!-- end of mdm wong sing heng -->
+
 
 
 

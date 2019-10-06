@@ -8,9 +8,14 @@ class ChartsController < ApplicationController
 
   def index
 
-    # mdm chan yau kum
+    # 1. mdm chan yau kum
     @mdmchan = Log.where({participant: "mdm chan yau kum"})
     @mdmchan_sensor = @mdmchan[0].sensor_type
+
+
+    # 2. mdm wong sing heng
+    @mdmwong = Log.where({participant: "mdm wong sing heng"})
+    @mdmwong_sensor = @mdmwong[0].sensor_type
 
 
 
