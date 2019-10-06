@@ -25,12 +25,12 @@
 
   <div class="form-group">
     <%= form.label :participant %>
-    <%= form.text_field :participant, class: "form-control" %>
+    <%= form.select :participant, [['1. mdm chan you kum'.titlecase,'mdm chan you kum'],['2. mdm wong sing heng'.titlecase,'mdm wong sing heng'],['3. mdm lau kwee lian'.titlecase,'mdm lau kwee lian'],['4. mdm maureen teo, mdm rosy soon'.titlecase,'mdm maureen teo, rosy soon'],['5.mr jimmy teo chin fook'.titlecase, 'mr jimmy teo chin fook'], ['6. mdm ann liow siew choo'.titlecase,'mdm ann liow siew choo'],['7. mr kang william'.titlecase, 'mr kang william'],['8. kang weslyn'.titlecase,'kang weslyn'],['9. mdm susan liew'.titlecase,'mdm susan liew'],['10. ms charlene koh'.titlecase,'ms charlene koh'],['11. mdm soh siew ngoh'.titlecase,'mdm soh siew ngoh'],['12. mdm tan suang suang'.titlecase,'mdm tan suang suang']] %>
   </div>
 
   <div class="form-group">
     <%= form.label :sensor_type %>
-    <%= form.text_field :sensor_type, class: "form-control" %>
+    <%= form.select :sensor_type, [['pm2.5'.upcase,'pm2.5'],['co2'.upcase,'co2'],['air quality'.upcase,'air quality'],['uv'.upcase,'uv'],['sound'.upcase,'sound']] %>
   </div>
 
   <div class="form-group">
