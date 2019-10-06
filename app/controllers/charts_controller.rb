@@ -17,6 +17,10 @@ class ChartsController < ApplicationController
     @mdmwong = Log.where({participant: "mdm wong sing heng"})
     @mdmwong_sensor = @mdmwong[0].sensor_type
 
+    # 3. mdm lau kwee lian
+    @mdmlau = Log.where({participant: "mdm lau kwee lian"})
+    @mdmlau_sensor = @mdmlau[0].sensor_type
+
 
 
 

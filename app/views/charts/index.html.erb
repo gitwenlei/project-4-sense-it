@@ -13,7 +13,7 @@
 	</div>
 	<!-- end of mdm chan yau kum -->
 
-		<!-- 2. mdm wong sing heng -->
+	<!-- 2. mdm wong sing heng -->
 	<div class="row">
 		<div class="col">
 			<%= line_chart @mdmwong.pluck(:log_date, :reading), xtitle: "Time", ytitle: @mdmwong_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
@@ -23,6 +23,18 @@
 		</div>
 	</div>
 	<!-- end of mdm wong sing heng -->
+
+
+	<!-- 3. mdm lau kwee lian -->
+	<div class="row">
+		<div class="col">
+			<%= line_chart @mdmlau.pluck(:log_date, :reading), xtitle: "Time", ytitle: @mdmlau_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @mdmlau[0].participant.titlecase %> | <%= @mdmlau_sensor.upcase %>
+					</p>
+		</div>
+	</div>
+	<!-- end of mdm lau kwee lian -->
 
 
 
