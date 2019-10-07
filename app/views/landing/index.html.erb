@@ -51,12 +51,12 @@
 		<div class="col col-blue">
 			<div class="landing-data-stories-content">
 				<h4 class="landing-data-stories-side-way">FROM DATA TO STORIES</h4>
-				<div class="landing-data-stories-datetime"><%= @mdm[0].log_date.strftime("%e %b %Y %H:%M:%S%p") %></div>
-				<div class="landing-data-stories-sensor-type"><%= @mdm[0].sensor_type.titlecase %></div>
-				<div class="landing-data-stories-reading"><%= @mdm[0].reading %></div>
-				<div class="landing-data-stories-img" style="background-image: url('<%= @mdm[0].img %>');"></div>
-				<div class="landing-data-stories-participant">By <%= @mdm[0].participant.titlecase %> </div>
-				<div class="landing-data-stories-text"><%= @mdm[0].observation %> </div>
+				<div class="landing-data-stories-datetime"><%= @mdmwong[0].log_date.strftime("%e %b %Y %H:%M:%S%p") %></div>
+				<div class="landing-data-stories-sensor-type"><%= @mdmwong[0].sensor_type.titlecase %></div>
+				<div class="landing-data-stories-reading"><%= @mdmwong[0].reading %></div>
+				<div class="landing-data-stories-img" style="background-image: url('<%= @mdmwong[0].img %>');"></div>
+				<div class="landing-data-stories-participant">By <%= @mdmwong[0].participant.titlecase %> </div>
+				<div class="landing-data-stories-text"><%= @mdmwong[0].observation %> </div>
 			</div>
 		</div>
 
@@ -71,7 +71,7 @@
 				<h4 class="landing-featured-participant-side-way-blue">OUR PARTICIPANTS</h4>
 				<div class="landing-participant-img" style="background-image: url('/images/auntie.jpg');"></div>
 				<div class="landing-participant-img-box-bg-dark-blue"></div>
-				<div class="landing-participant-name"><h3 class="landing-header-participant-name"><%= @mdm[0].participant.upcase %></h3></div>
+				<div class="landing-participant-name"><h3 class="landing-header-participant-name"><%= @mdmwong[0].participant.upcase %></h3></div>
 			</div>
 		</div>
 
@@ -79,7 +79,7 @@
 		<!-- 3rd row 2nd column -->
 		<div class="col col-yellow">
 			<div class="landing-participant-content">
-				<h4 class="landing-participant-side-way"><%= @mdm[0].participant.upcase %></h4>
+				<h4 class="landing-participant-side-way">MDM LUCY CHEW</h4>
 				<div class="landing-participant-text">My favorite activity in Punggol is line-dancing at Oasis Terraces every Tuesday night. My friends and I would bring kueh-kueh and cakes. We would chit chat and have kopi after our dance session. </div>
 			</div>
 		</div>
@@ -94,7 +94,7 @@
  <!-- 4th row 1st column -->
 	<div class="col col-yellow">
 			<div class="landing-participant-content">
-				<h4 class="landing-participant-side-way"><%= @mr[0].participant.upcase %></h4>
+				<h4 class="landing-participant-side-way">MR MICHAEL TAN</h4>
 				<div class="landing-participant-text">My favorite activity in Punggol is Punggol Settlement. I used to stay in the kampung and it reminded me of my childhood days. Besides the seafood restaurant, it is a fabulous place to go fishing with my friends. </div>
 			</div>
 		</div>
@@ -105,7 +105,7 @@
 				<h4 class="landing-featured-participant-side-way-yellow">OUR PARTICIPANTS</h4>
 				<div class="landing-participant-uncle-img" style="background-image: url('/images/uncle.jpg');"></div>
 				<div class="landing-participant-img-box-bg-dark-blue"></div>
-				<div class="landing-participant-name"><h3 class="landing-header-participant-name"><%= @mr[0].participant.upcase %></h3></div>
+				<div class="landing-participant-name"><h3 class="landing-header-participant-name">MR MICHAEL TAN</h3></div>
 			</div>
 		</div>
 
