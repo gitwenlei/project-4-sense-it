@@ -48,6 +48,18 @@
 	<!-- end of 4. mdm maureen teo mdm rosy soon -->
 
 
+	<!--# 7. mr kang william-->
+	<div class="row">
+		<div class="col">
+			<%= line_chart @mrkang.pluck(:log_date, :reading), xtitle: "Time", ytitle: @mrkang_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @mrkang[0].participant.titlecase %> | <%= @mrkang_sensor.upcase %>
+					</p>
+		</div>
+	</div>
+	<!-- end of 7. mr kang william -->
+
+
 
 
 </div>
