@@ -28,6 +28,10 @@ class ChartsController < ApplicationController
     @mrkang = Log.where({participant: "mr kang william"})
     @mrkang_sensor = @mrkang[0].sensor_type
 
+    #8. kang weslyn
+    @weslyn = Log.where({participant: "kang weslyn"})
+    @weslyn_sensor = @weslyn[0].sensor_type
+
 
 
   end

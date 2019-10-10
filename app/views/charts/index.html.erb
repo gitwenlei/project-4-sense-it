@@ -61,5 +61,18 @@
 
 
 
+	<!--# 8. kang weslyn-->
+	<div class="row">
+		<div class="col">
+			<%= line_chart @weslyn.pluck(:log_date, :reading), xtitle: "Time", ytitle: @weslyn_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @weslyn[0].participant.titlecase %> | <%= @weslyn_sensor.upcase %>
+					</p>
+		</div>
+	</div>
+	<!-- end of 8. kang weslyn -->
+
+
+
 
 </div>
