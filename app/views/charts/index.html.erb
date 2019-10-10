@@ -74,5 +74,32 @@
 
 
 
+	<!--# 9. mdm susan liew-->
+	<div class="row">
+		<div class="col">
+			<%= line_chart @mdmsusan.pluck(:log_date, :reading), xtitle: "Time", ytitle: @mdmsusan_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @mdmsusan[0].participant.titlecase %> | <%= @mdmsusan_sensor.upcase %>
+					</p>
+		</div>
+	</div>
+	<!-- end of 9. mdm susan liew -->
+
+
+
+	<!--# 11. mdm soh siew ngoh -->
+	<div class="row">
+		<div class="col">
+			<%= line_chart @mdmsoh.pluck(:log_date, :reading), xtitle: "Time", ytitle: @mdmsoh_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @mdmsoh[0].participant.titlecase %> | <%= @mdmsoh_sensor.upcase %>
+					</p>
+		</div>
+	</div>
+	<!-- end of 11. mdm soh siew ngoh -->
+
+
+
+
 
 </div>
