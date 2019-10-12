@@ -48,6 +48,34 @@
 	<!-- end of 4. mdm maureen teo mdm rosy soon -->
 
 
+	<!-- 5.mr jimmy teo chin fook -->
+	<div class="row">
+		<div class="col">
+			<%= line_chart @jimmy.pluck(:log_date, :reading), xtitle: "Time", ytitle: @jimmy_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @jimmy[0].participant.titlecase %> | <%= @jimmy_sensor.upcase %>
+					</p>
+		</div>
+	</div>
+	<!-- end of 5.mr jimmy teo chin fook -->
+
+
+
+
+	<!-- 6. mdm ann liow siew choo -->
+	<div class="row">
+		<div class="col">
+			<%= line_chart @ann.pluck(:log_date, :reading), xtitle: "Time", ytitle: @ann_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @ann[0].participant.titlecase %> | <%= @ann_sensor.upcase %>
+					</p>
+		</div>
+	</div>
+	<!-- end of 6. mdm ann liow siew choo -->
+
+
+
+
 	<!--# 7. mr kang william-->
 	<div class="row">
 		<div class="col">
@@ -87,6 +115,21 @@
 
 
 
+
+	<!--# 10. ms charlene koh-->
+	<div class="row">
+		<div class="col">
+			<%= line_chart @charlene.pluck(:log_date, :reading), xtitle: "Time", ytitle: @charlene_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @charlene[0].participant.titlecase %> | <%= @charlene_sensor.upcase %>
+					</p>
+		</div>
+	</div>
+	<!-- end of 10. ms charlene koh -->
+
+
+
+
 	<!--# 11. mdm soh siew ngoh -->
 	<div class="row">
 		<div class="col">
@@ -100,6 +143,16 @@
 
 
 
+<!-- 12. mdm tan suang suang -->
+	<div class="row">
+		<div class="col">
+			<%= line_chart @suang.pluck(:log_date, :reading), xtitle: "Time", ytitle: @suang_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+					<p class="chart-participant">
+						<%= @suang[0].participant.titlecase %> | <%= @suang_sensor.upcase %>
+					</p>
+		</div>
+	</div>
+<!-- end of 12. mdm tan suang suang -->
 
 
 </div>
