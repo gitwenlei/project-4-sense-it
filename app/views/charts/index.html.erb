@@ -5,7 +5,7 @@
  	<!-- 1. mdm chan yau kum -->
 	<div class="row">
 		<div class="col">
-			<%= line_chart @mdmchan.pluck(:log_date, :reading, :location), xtitle: "Time", ytitle: @mdmchan_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
+			<%= line_chart @mdmchan.pluck(:reading, :location), xtitle: "Time", ytitle: @mdmchan_sensor.upcase, width: "800px", height: "300px", label: "Reading", colors: ["#f00"] %>
 					<p class="chart-participant">
 						<%= @mdmchan[0].participant.titlecase %> | <%= @mdmchan_sensor.upcase %>
 					</p>
